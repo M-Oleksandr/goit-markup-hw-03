@@ -20,7 +20,7 @@ font-family: 'Roboto', sans-serif; */
     --section-color: #F5F4FA;
     --color-address-footer: rgba(255, 255, 255, 0.6);
     --secondary-accent-color: #188CE8;
-    }
+}
 
 body {
     font-family: Roboto, sans-serif;
@@ -76,6 +76,7 @@ ul {
 
 .nav {
     display: flex;
+    justify-content: space-between;
 
     font-weight: 500;
     font-size: 14px;
@@ -114,7 +115,7 @@ ul {
 
 .contacts {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 
     font-weight: 500;
     font-size: 14px;
@@ -124,6 +125,7 @@ ul {
 .contacts-link {
     display: block;
     margin-right: 50px;
+    padding: 32px;
 
     color: var(--title-text-color);
     text-decoration: none;
@@ -143,6 +145,7 @@ ul {
 
 .main-section {
     text-align: center;
+    padding-bottom: 94px;
     background-color: var(--secondary-black-color);
 }
 .main-section-text {
@@ -158,6 +161,9 @@ ul {
     color: var(--primary-white-color);
 }
 .button-order {
+    padding: 10px 32px;
+    border-radius: 4px;
+
     background: var(--accent-color);
     color: var(--primary-white-color);
     font-weight: 700;
@@ -165,8 +171,6 @@ ul {
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
-    padding: 10px 32px;
-    border-radius: 4px;
 }
 .button-order:hover {
     background: var(--secondary-accent-color);
@@ -190,7 +194,19 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+    padding-left: 0;
+
+
+}
 .features {
+    padding-right: 30px;
+    padding-bottom: 10px;
+    width: 270px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -198,13 +214,17 @@ ul {
 
     color: var(--primary-text-color);
 }
-/* .features-description {
-    
-} */
+.features-description {
+    width: 270px;
+    padding-right: 30px;
+}
+
 
 /* What we do */
 
 .our-work-title {
+    padding-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -212,6 +232,16 @@ ul {
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
+}
+.our-work-image {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+    padding-left: 0;
+}
+.our-work-link {
+    width: 370px;
+    margin-right: 30px;
 }
 
 /* Team */
