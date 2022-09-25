@@ -35,6 +35,8 @@ body {
         
 /* Header */
 
+
+
 .container {
     width: 1200px;
     margin-right: auto;
@@ -42,13 +44,8 @@ body {
     padding-right: 15px;
     padding-left: 15px;
 }
-.container-header {
+.header {
     display: flex;
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -79,7 +76,6 @@ ul {
 
 .nav {
     display: flex;
-    justify-content: space-between;
     gap: 50px;
     margin: 0;
     padding-left: 0;
@@ -117,9 +113,9 @@ ul {
 }
 
 .contacts {
+    margin: 0;
     display: flex;
     gap: 50px;
-    justify-content: space-between;
     margin-left: auto;
     padding-left: 0;
 
@@ -127,14 +123,14 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    }
+}
 .contacts-link {
     display: block;
     padding: 32px 0;
 
     color: var(--title-text-color);
     text-decoration: none;
-    }
+}
 .contacts-link:hover {
     color: var(--accent-color);
 }
@@ -157,7 +153,7 @@ ul {
 }
 .main-section-text {
     margin: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 
     font-weight: 900;
     font-size: 44px;
@@ -171,7 +167,7 @@ ul {
 .button-order {
     padding: 10px 32px;
     border-radius: 4px;
-    border: transparent;
+    border: none;
 
     background: var(--accent-color);
     color: var(--primary-white-color);
@@ -203,19 +199,18 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .features-container {
     display: flex;
-    justify-content: space-between;
-    padding: 94px 0 0 0;
     gap: 30px;
     margin: 0;
-
-
+    padding: 0;
 }
-.features {
-    margin: 0;
-    padding: 0 0 10px 0;
-    width: 270px;
+.feature {
+    margin: 0 0 10px 0;
 
     font-weight: 700;
     font-size: 14px;
@@ -232,9 +227,11 @@ ul {
 
 /* What we do */
 
+.work {
+    padding-bottom: 94px;
+}
 .our-work-title {
-    padding: 94px 0 50px 0;
-    margin: 0;
+    margin: 0 0 50px 0;
 
     font-weight: 700;
     font-size: 36px;
@@ -246,54 +243,51 @@ ul {
 }
 .our-work-image {
     display: flex;
-    justify-content: space-between;
     gap: 30px;
     padding: 0;
     margin: 0;
-    width: 370px;
 }
-.our-work-link {
-    padding: 0;
-    margin: 0;
+.our-work-link > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Team */
 
-.container-team {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 15px 94px 15px;
+.team {
+    padding: 94px 0 94px 0;
 
     background: var(--section-color);
 }
 
 .our-team-title {
-    padding: 94px 0 50px 0;
-    margin: 0;
+    margin: 0 0 50px 0;
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
    
-
     color: var(--primary-text-color);
 }
 .our-team {
     display: flex;
-    justify-content: space-between;
     gap: 30px;
     padding: 0;
     margin: 0;
-    width: 270px;
-   
-    
+}
+.card {
+    background: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.employee {
+    padding: 30px 0 30px 0;
 }
 .our-team-employee {
-    padding: 30px 60px 10px 60px;
-    margin: 0;
-    
+    margin: 0 0 10px 0;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -302,7 +296,6 @@ ul {
     color: var(--primary-text-color);
 }
 .our-team-position {
-    padding: 0 60px 30px 60px;
     margin: 0;
 
     font-size: 16px;
@@ -315,20 +308,11 @@ ul {
 /* Footer */
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 60px 0 60px 0;
 
     background: var(--secondary-black-color);
 }
 .logo-footer {
-    padding: 60px 0 20px 0;
-    
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -340,11 +324,16 @@ ul {
     color: var(--primary-white-color);
 }
 .address {
-    padding:0 0 60px 0;
-    margin: 0;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+.list-item {
+    margin: 0 0 9px 0;
+}
+.list-item:last-child {
+    margin-bottom: 0;
 }
 .address-link {
-    gap: 9px;
 
     font-style: normal;
     color: var(--primary-white-color);
